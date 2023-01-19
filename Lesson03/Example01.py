@@ -18,7 +18,7 @@ def calc1(x):
 # print(calc1(10))
 
 def calc2(x):
-    return x*10;
+    return x*10
 
 # print(calc2(10))
 
