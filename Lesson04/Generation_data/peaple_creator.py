@@ -16,4 +16,3 @@ def new_peaple_create():
 
     return (new_id, name, surname, birthday, work_place, *phones)
 
-# print(new_peaple_create())

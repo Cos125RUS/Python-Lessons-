@@ -9,9 +9,9 @@ def question():
 def create():
     choice = int(input("Are you want card (pass '1') or xml (pass '2')? "))
     if choice == 1:
-        return f.create(*question()[0:-1])
-    elif choice == 2:
         return c.create(*question()[0:-1])
+    elif choice == 2:
+        return f.create(*question()[0:-1])
     else:
         print('Incorrect value\nTry again')
         return create()

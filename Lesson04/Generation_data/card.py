@@ -6,7 +6,7 @@ def create(num_id = '-', name = 'none', surname = 'none', birthday = 'none', wor
     card = f"\n\nID# {num_id}\nName: {name}\nSurname: {surname}\nBirthday: {birthday}\nWork place: {work}\n"\
             f"Home phone: {home_phone[1]}\nWork phone: {work_phone[1]}\nSelf phone: {self_phone[1]}\n\n\nCharacteristic: "
 
-    with open('card_person.xml', 'w') as page:
+    with open('card_person.doc', 'w') as page:
         page.write(card)
 
     print("Card was create")

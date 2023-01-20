@@ -10,4 +10,3 @@ def do_create():
     print('New member was creation\n')
     return data
 
-# print(*do_create())
