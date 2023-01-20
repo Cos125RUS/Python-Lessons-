@@ -7,7 +7,7 @@ def name():
         new_name = lists[n].replace('\n', '')
     return new_name
 
-print(name(), end = ' ')
+# print(name(), end = ' ')
 
 def surname():
     with open('surnames.txt', 'r') as surnames:
@@ -17,7 +17,7 @@ def surname():
 
     return new_surname
 
-print(surname())
+# print(surname())
 
 def birthday():
     year = str(randint(1950, 2005))
@@ -26,7 +26,7 @@ def birthday():
     date = f'{day}.{month}.{year}'
     return date
 
-print(birthday())
+# print(birthday())
 
 def work_place():
     with open('companies.txt', 'r') as companies:
@@ -36,15 +36,15 @@ def work_place():
 
     return f'"{new_company}"'
 
-print(work_place())
+# print(work_place())
 
 
-def phone_numbers():
+def phone_numbers(i):
     phone = '+7(9' + ('%2.2s'%randint(0, 100)).replace(' ', '0') + ')'\
             + ('%3.3s'%randint(0, 1000)).replace(' ', '0') + '-'\
             + ('%2.2s'%randint(0, 100)).replace(' ', '0') + '-'\
             + ('%2.2s'%randint(0, 100)).replace(' ', '0')
     return phone
 
-print(phone_numbers())
+# print(phone_numbers(0))
 
