@@ -1,11 +1,12 @@
 import creation as create
+import finder as find
 
 def menu():
-    options = [create.do_create]
-    chois = int
-    while (chois != 0):
-        chois = -1
-        while (chois != 1 and chois != 2 and chois != 0):
-            chois = int(input('Press "1" to create new member\nPress "2" to find member\nPress "0" to exit\n'))
-        if chois == 1 or chois == 2:
-            options[chois-1]()
+    options = [create.do_create, find.create]
+    choice = int
+    while (choice != 0):
+        choice = -1
+        while (choice != 1 and choice != 2 and choice != 0):
+            choice = int(input('Press "1" to create new member\nPress "2" to find member\nPress "0" to exit\n'))
+        if choice == 1 or choice == 2:
+            options[choice-1]()

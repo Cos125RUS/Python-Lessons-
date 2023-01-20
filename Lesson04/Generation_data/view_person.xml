@@ -1,0 +1,10 @@
+<xml>
+    <num_id units = "ID">123</num_id>
+    <name units = "Name">Leonora</name>
+    <surname units = "Surname">Garrison</surname>
+    <birthday units = "Birthday">11.09.1997</birthday>
+    <work units = "Work">"Love"</work>
+    <home_phone units = "Home phone">+7(990)727-13-79</home_phone>
+    <work_phone units = "Work phone">+7(965)408-42-15</work_phone>
+    <self_phone units = "Self phone">-</self_phone>
+</xml>
