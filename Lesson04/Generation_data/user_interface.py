@@ -1,12 +1,12 @@
-import peaple_creator as pc
-import logger as log
-import add_member as member
+import creation as create
 
-def view_create():
-    data = pc.new_peaple_create()
-    log.creation_new_person(data)
-    member.add_new_member_csv(data)
-    member.add_new_member_doc(data)
-    return data
-
-print(*view_create())
+def menu():
+    options = [create.do_create]
+    chois = int
+    while (chois != 0):
+        chois = -1
+        while (chois != 1 and chois != 2 and chois != 0):
+            print('Press "1" to create new member\nPress "2" to print xml-file\nPress "0" to exit\n')
+            chois = int(input())
+        if chois == 1 or chois == 2:
+            options[chois-1]()
