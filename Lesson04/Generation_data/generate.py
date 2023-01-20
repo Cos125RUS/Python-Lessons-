@@ -3,7 +3,7 @@ from random import randint
 def name():
     with open('name.txt', 'r') as names:
         lists = names.readlines()
-        n = randint(0, len(lists))
+        n = randint(0, len(lists)-1)
         new_name = lists[n].replace('\n', '')
     return new_name
 
@@ -12,7 +12,7 @@ def name():
 def surname():
     with open('surnames.txt', 'r') as surnames:
         lists = surnames.readlines()
-        n = randint(0, len(lists))
+        n = randint(0, len(lists)-1)
         new_surname = lists[n].replace('\n', '')
 
     return new_surname
@@ -31,7 +31,7 @@ def birthday():
 def work_place():
     with open('companies.txt', 'r') as companies:
         lists = companies.readlines()
-        n = randint(0, len(lists))
+        n = randint(0, len(lists)-1)
         new_company = lists[n].replace('\n', '')
 
     return f'"{new_company}"'
@@ -39,8 +39,8 @@ def work_place():
 # print(work_place())
 
 
-def phone_numbers(i):
-    phone = '+7(9' + ('%2.2s'%randint(0, 100)).replace(' ', '0') + ')'\
+def phone_numbers(location):
+    phone = location + ': +7(9' + ('%2.2s'%randint(0, 100)).replace(' ', '0') + ')'\
             + ('%3.3s'%randint(0, 1000)).replace(' ', '0') + '-'\
             + ('%2.2s'%randint(0, 100)).replace(' ', '0') + '-'\
             + ('%2.2s'%randint(0, 100)).replace(' ', '0')
